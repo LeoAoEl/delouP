@@ -1,0 +1,25 @@
+---
+import Container from "@components/Container.astro";
+import { getI18N } from "@i18n/index";
+import Social from "@components/common/Social.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, body, follow } = i18n.Banner;
+const { extendedLorem } = i18n.Common;
+---
+
+<main class="bg-lightRose">
+  <Container className=" flex lg:flex-row justify-between">
+    <section class="flex lg:flex-col text-white justify-center lg:w-2/4">
+      <span class="text-primary text-4xl font-semibold mb-4">{title}</span>
+      <span class="text-4xl text-white">{body}</span>
+    </section>
+    <div class="flex lg:flex-col text-white justify-center lg:w-2/4"></div>
+    <aside class="flex lg:flex-col text-white justify-center lg:w-1/4">
+      <span class="text-4xl text-center">{follow}</span>
+      <Social />
+      <span class="text-par text-center text-pretty">{extendedLorem}</span>
+    </aside>
+  </Container>
+</main>

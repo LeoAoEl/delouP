@@ -10,6 +10,7 @@ export default {
         deepPurple: "#7151ee",
         footerBg: "#542c8c",
         footerAcentuate: "#502889",
+        par: "#fbf1e5",
       },
     },
   },

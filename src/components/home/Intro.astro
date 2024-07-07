@@ -1,0 +1,23 @@
+---
+import bgImage from "@assets/images/1.webp";
+---
+
+<div class="relative p-8 flex justify-center items-center h-64">
+  <div
+    class="absolute inset-0 scalloped-bg"
+    style={`background-image: url(${bgImage})`}
+  >
+  </div>
+  <h1
+    class="relative z-10 text-6xl font-bold text-orange-600 bg-white py-2 px-6 rounded-full"
+  >
+    INGREDIENTES
+  </h1>
+</div>
+
+<style>
+  .scalloped-bg {
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+  }
+</style>

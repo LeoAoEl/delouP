@@ -1,0 +1,22 @@
+---
+import Facebook from "@assets/icons/social/Facebook.astro";
+import Insta from "@assets/icons/social/Insta.astro";
+import Tik from "@assets/icons/social/Tiktok.astro";
+const data = [
+  { url: "https://www.facebook.com", name: Facebook },
+  { url: "https://www.instagram.com", name: Insta },
+  { url: "https://www.tiktok.com", name: Tik },
+];
+---
+
+<div class="flex flex-row justify-between py-8">
+  <a href="" target="_blank" class="p-6 rounded-full bg-deepRose mx-auto">
+    <Insta />
+  </a>
+  <a href="" target="_blank" class="p-6 rounded-full bg-deepRose mx-auto">
+    <Facebook />
+  </a>
+  <a href="" target="_blank" class="p-6 rounded-full bg-deepRose mx-auto">
+    <Tik />
+  </a>
+</div>

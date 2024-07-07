@@ -1,0 +1,67 @@
+{
+    "SEO": {
+        "title": "Delou Snacks",
+        "description": "Dulces bajos en Azúcar 100% Naturales"
+    },
+    "Common": {
+        "title": "Lorem Ipsum",
+        "sugar": "Sugar free",
+        "extendedLorem": "Lorem ipsum dolor sit amet, consectetuer, Lorem ipsum dolor sit amet, consectetuer, Lorem ipsum dolor sit amet, consectetuer"
+    },
+    "Intro": {
+        "title": "Ingredients",
+        "p1": "LOW SUGAR",
+        "p2": "Candy",
+        "p3": "LOREM IPSUM LOREM",
+        "sugar": "Sugar"
+    },
+    "Part1": {
+        "top": "NATURAL FLAVORINGS AND COLORINGS",
+        "bott": "Added with Prebiotic Fiber",
+        "left": "100% Natural",
+        "right": "Sugar Free"
+    },
+    "Right1": {
+        "sugar": "Sugar Free",
+        "gluten": "Gluten Free",
+        "vegano": "Vegan",
+        "chile": "With Chili"
+    },
+    "Vs": {
+        "delou:": [
+            "Sugar",
+            "Fiber",
+            "KCAL",
+            "Natural Colors and Flavors"
+        ],
+        "other": [
+            "Sugar",
+            "Fiber",
+            "KCAL",
+            "Artificial Colors and Flavors"
+        ]
+    },
+    "Banner": {
+        "title": "Newsletter",
+        "body": "SUBSCRIBE TO GET EXCLUSIVE PROMOTIONS",
+        "follow": "Follow us"
+    },
+    "Footer": {
+        "left": [
+            "Brands",
+            "Recipes",
+            "Find a Snack",
+            "Eat Safely Guidelines",
+            "Nutrition Professional Resources",
+            "Safety Tips for Feeding Your Kids"
+        ],
+        "right": [
+            "Terms of Use",
+            "Privacy Policy",
+            "Accessibility Statement",
+            "Do Not Share or Sell My Personal Information",
+            "Contact Us",
+            "Cookie Policy"
+        ]
+    }
+}
