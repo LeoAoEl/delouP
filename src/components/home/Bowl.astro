@@ -4,9 +4,7 @@ import { Image } from "astro:assets";
 import BowlImage from "@assets/images/ocho.webp";
 import Container from "@components/Container.astro";
 import Dulces from "@assets/images/7.webp";
-import Bowl2 from "../../../public/ocho.webp";
 import BowlContent from "@components/common/BowlContent.astro";
-import BowBottomImg from "../../../public/7.webp";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -19,11 +17,9 @@ const { extendedLorem, sugar } = i18n.Common;
   >
     <picture class="lg:w-1/2">
       <Image
-        src={Bowl2}
+        src={BowlImage}
         alt={"BowlImage"}
-        loading={"lazy"}
-        format={"avif"}
-        quality={"low"}
+        loading={"eager"}
         class={" drop-shadow-2xl"}
       />
     </picture>
@@ -41,12 +37,10 @@ const { extendedLorem, sugar } = i18n.Common;
 </main>
 
 <div class="flex flex-col-reverse lg:flex-row lg:h-96">
-  <picture class="lg:w-1/2 w-full">
+  <picture class="lg:w-1/2 w-fit">
     <Image
-      src={BowBottomImg}
-      quality="mid"
-      loading="lazy"
-      format="avif"
+      src={Dulces}
+      loading={"eager"}
       alt="Candies"
       class="w-full h-full object-cover"
     />
