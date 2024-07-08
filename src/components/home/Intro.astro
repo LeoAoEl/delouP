@@ -1,7 +1,8 @@
 ---
 import { getI18N } from "@i18n/index";
-import candyImg from "@assets/images/5.webp";
+import BottomImg from "@assets/images/5.webp";
 import { Image } from "astro:assets";
+import Imagen from "../../../public/5.webp";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -44,8 +45,8 @@ const { title, p1, p2, p3, sugar } = i18n.Intro;
   <div class="flex lg:flex-row flex-col lg:h-48">
     <picture class="lg:w-1/2">
       <Image
-        src={candyImg}
-        quality={"low"}
+        src={Imagen}
+        quality={"mid"}
         loading={"eager"}
         format={"avif"}
         alt={"Dulces"}
