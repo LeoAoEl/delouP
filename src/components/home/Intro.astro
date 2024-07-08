@@ -1,23 +1,66 @@
 ---
-import bgImage from "@assets/images/1.webp";
+import { getI18N } from "@i18n/index";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+import candyImg from "@assets/images/5.webp";
+const { title, p1, p2, p3, sugar } = i18n.Intro;
+import { Image } from "astro:assets";
 ---
 
-<div class="relative p-8 flex justify-center items-center h-64">
-  <div
-    class="absolute inset-0 scalloped-bg"
-    style={`background-image: url(${bgImage})`}
-  >
+<div
+  class="relative flex lg:min-h-screen bg-cover justify-stretch bg-heroMain items-center flex-col"
+>
+  <div class="py-40 flex justify-center place-content-center">
+    <h1
+      class="relative uppercase text-3xl lg:text-7xl font-extrabold text-orange-600 bg-white py-4 px-8 rounded-full"
+    >
+      {title}
+    </h1>
   </div>
-  <h1
-    class="relative z-10 text-6xl font-bold text-orange-600 bg-white py-2 px-6 rounded-full"
-  >
-    INGREDIENTES
-  </h1>
-</div>
 
-<style>
-  .scalloped-bg {
-    background-size: cover;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
-  }
-</style>
+  <div class="bg-lightRose min-w-full">
+    <section class="flex flex-col justify-center p-8 gap-4">
+      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+        >{p1}
+        <span
+          class="text-primary uppercase hover:text-deepPurple transition-all cursor-pointer ease-in"
+          >{p2}</span
+        >
+      </span>
+      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+        >LOREM IPSUM</span
+      >
+      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+        >{p3}</span
+      >
+      <span
+        class="border-2 mx-auto transition-all cursor-pointer mb-8 ease-in-out hover:text-primary hover:bg-deepPurple hover:border-primary text-3xl mt-8 rounded-full border-deepPurple p-2 bg-primary text-deepPurple uppercase"
+        >lorem ipsum</span
+      >
+    </section>
+  </div>
+
+  <div class="flex lg:flex-row flex-col lg:h-48">
+    <picture class="lg:w-1/2">
+      <Image
+        src={candyImg}
+        quality={"low"}
+        loading={"eager"}
+        format={"avif"}
+        alt={"Candies"}
+        class="w-full h-full object-cover"
+      />
+    </picture>
+    <div
+      class="flex flex-col bg-primary lg:w-1/2 w-full justify-center items-center p-4 gap-4"
+    >
+      <span class="text-3xl lg:text-7xl font-normal text-orange-600 text-center"
+        >0 g</span
+      >
+      <span
+        class="text-3xl uppercase lg:text-7xl font-normal text-slate-700 text-center"
+        >{sugar}</span
+      >
+    </div>
+  </div>
+</div>

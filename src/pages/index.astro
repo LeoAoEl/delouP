@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import { getI18N } from "@i18n/index";
 import Banner from "@components/home/Banner.astro";
 import Intro from "@components/home/Intro.astro";
+import Vs from "@components/home/Vs.astro";
+import SugarFree from "@components/home/SugarFree.astro";
+import Candy from "@components/home/Candy.astro";
+import Bowl from "@components/home/Bowl.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -11,5 +15,9 @@ const { title, description } = i18n.SEO;
 
 <Layout title={title} description={description}>
   <Intro />
+  <Candy />
+  <Bowl />
+  <SugarFree />
+  <Vs />
   <Banner />
 </Layout>

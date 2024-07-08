@@ -1,0 +1,49 @@
+---
+import { getI18N } from "@i18n/index";
+import { Image } from "astro:assets";
+import StarImage from "@assets/images/star.webp";
+import Container from "@components/Container.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { extendedLorem, sugar } = i18n.Common;
+---
+
+<aside class="bg-primary hidden lg:flex flex-row justify-between p-4">
+  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+</aside>
+<main class="bg-deepRose py-16">
+  <Container
+    className="flex lg:flex-row flex-col-reverse items-center justify-center place-content-center"
+  >
+    <picture class="lg:w-1/2">
+      <Image
+        src={StarImage}
+        alt={"Shape of star"}
+        loading={"lazy"}
+        format={"avif"}
+        quality={"low"}
+        class={" drop-shadow-2xl"}
+      />
+    </picture>
+    <section class="lg:w-1/2 lg:ml-12">
+      <span class="text-primary text-5xl lg:text-7xl lg:mb-4 font-extrabold">
+        {sugar}</span
+      >
+      <p
+        class="text-slate-200 text text-2xl lg:text-5xl text-justify mt-4 lg:mt-4 mb-8 lg:mb-0"
+      >
+        {extendedLorem}
+      </p>
+    </section>
+  </Container>
+</main>
+<aside class="bg-primary hidden lg:flex flex-row justify-center p-4">
+  <span class="text-5xl text-deepRose font-bold text-center"
+    >Lorem ipsum dolor sit amet, consectetuer , Lorem ipsum dolor sit amet,</span
+  >
+</aside>

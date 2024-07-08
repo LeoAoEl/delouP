@@ -13,7 +13,7 @@ const { left, right } = i18n.Footer;
         class="flex p-8 bg-footerAcentuate lg:justify-start justify-center lg:w-2/3 w-full rounded-md"
       >
         <span class="text-7xl uppercase text-white text-center lg:text-left"
-          >Delou</span
+          >Deloü</span
         >
       </div>
     </div>
@@ -25,14 +25,18 @@ const { left, right } = i18n.Footer;
           <section class="flex flex-col gap-4">
             {
               left.map((item) => (
-                <span class=" text-gray-300 text-lg text-pretty">{item}</span>
+                <span class=" text-gray-300 text-lg text-pretty hover:underline transition-all cursor-pointer ease-in">
+                  {item}
+                </span>
               ))
             }
           </section>
           <section class="flex flex-col gap-4">
             {
               right.map((item) => (
-                <span class=" text-gray-300 text-lg text-pretty">{item}</span>
+                <span class=" text-gray-300 text-lg text-pretty hover:underline transition-all cursor-pointer ease-in">
+                  {item}
+                </span>
               ))
             }
           </section>

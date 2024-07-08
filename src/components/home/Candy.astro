@@ -1,0 +1,56 @@
+---
+import { getI18N } from "@i18n/index";
+import { Image } from "astro:assets";
+import CandyImg from "@assets/images/6.webp";
+import Container from "@components/Container.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { sugar } = i18n.Common;
+const { top, bott, left, right } = i18n.Part1;
+---
+
+<main class="bg-vsColor py-20 flex flex-col items-center justify-center">
+  <Container className="relative flex items-center justify-center">
+    <picture class="lg:w-full flex items-center justify-center">
+      <Image
+        src={CandyImg}
+        alt="Shape of star"
+        loading="lazy"
+        format="avif"
+        quality="low"
+        class="lg:w-3/4 w-2/3 cursor-pointer drop-shadow-2xl hover:scale-105 transition-all ease-in"
+      />
+    </picture>
+    <div class="absolute top-10 transform text-center hidden lg:flex">
+      <p class="font-semibold text-2xl text-deepRose uppercase">{top}</p>
+    </div>
+    <div
+      class="absolute left-20 transform -translate-x-20 hidden lg:flex items-center"
+    >
+      <p class="font-semibold text-2xl text-deepRose uppercase">
+        {left}
+      </p>
+    </div>
+    <div
+      class="absolute right-20 transform translate-x-20 hidden lg:flex items-center"
+    >
+      <p class="font-semibold text-2xl text-deepRose uppercase">
+        {right}
+      </p>
+    </div>
+    <div
+      class="absolute bottom-10 transform translate-y-full hidden lg:flex text-center"
+    >
+      <p class="font-semibold text-2xl text-deepRose uppercase">{bott}</p>
+    </div>
+  </Container>
+</main>
+
+<aside class="bg-deepRose hidden lg:flex flex-row justify-between p-4">
+  <span class="text-5xl text-primary font-bold">{sugar}</span>
+  <span class="text-5xl text-primary font-bold">{sugar}</span>
+  <span class="text-5xl text-primary font-bold">{sugar}</span>
+  <span class="text-5xl text-primary font-bold">{sugar}</span>
+  <span class="text-5xl text-primary font-bold">{sugar}</span>
+</aside>
