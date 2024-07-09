@@ -11,14 +11,16 @@ const i18n = getI18N({ currentLocale });
 const { extendedLorem, sugar } = i18n.Common;
 ---
 
-<main class="bg-lightRose lg:relative py-24 lg:py-0">
+<main class="bg-lightRose lg:relative pt-24 lg:py-0">
   <Container
-    className="flex lg:flex-row flex-col-reverse items-center justify-center place-content-center py-0 lg:py-24"
+    className="flex lg:flex-row flex-col-reverse items-center justify-center place-content-center py-0  lg:py-24"
   >
     <picture class="lg:w-1/2">
       <Image src={BowlImage} alt={"BowlImage"} loading={"eager"} class={" "} />
     </picture>
-    <section class="lg:w-1/2 lg:ml-12 font-cSoon uppercase">
+    <section
+      class="lg:w-1/2 lg:ml-12 font-cSoon uppercase justify-center flex flex-col"
+    >
       <span class="text-primary text-4xl lg:text-6xl lg:mb-8 font-bold">
         {sugar}</span
       >
@@ -29,10 +31,13 @@ const { extendedLorem, sugar } = i18n.Common;
       </p>
     </section>
   </Container>
-  <div class="lg:bg-bottomWave lg:absolute lg:h-32 lg:w-full bg-cover"></div>
+  <div
+    class="bg-bottomWave absolute lg:h-32 w-full lg:bg-cover pb-32 lg:pb-0 bg-no-repeat"
+  >
+  </div>
 </main>
 
-<div class="flex flex-col-reverse lg:flex-row lg:h-full">
+<div class="flex flex-col lg:flex-row lg:h-full">
   <picture class="lg:w-1/2 w-fit">
     <Image
       src={Dulces}

@@ -10,13 +10,28 @@ const { extendedLorem, sugar } = i18n.Common;
 ---
 
 <aside
-  class="bg-primary font-noto hidden uppercase lg:flex flex-row justify-between p-4"
+  class="bg-primary truncate overflow-hidden uppercase lg:flex flex-row justify-center lg:justify-between p-2 lg:p-4 font-noto"
 >
-  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
+  <span
+    class="text-center lg:text-left lg:text-3xl text-deepRose font-bold text-sm"
+    >{sugar}</span
+  >
+  <span
+    class="text-center lg:text-left lg:text-3xl text-deepRose font-bold text-sm"
+    >{sugar}</span
+  >
+  <span
+    class="text-center lg:text-left lg:text-3xl text-deepRose font-bold text-sm"
+    >{sugar}</span
+  >
+  <span
+    class="text-center lg:text-left lg:text-3xl text-deepRose font-bold text-sm"
+    >{sugar}</span
+  >
+  <span
+    class="text-center lg:text-left lg:inline hidden lg:text-3xl text-deepRose font-bold text-sm"
+    >{sugar}</span
+  >
 </aside>
 <main class="bg-deepRose py-16">
   <Container
@@ -33,7 +48,7 @@ const { extendedLorem, sugar } = i18n.Common;
       />
     </picture>
     <section class="lg:w-1/2 lg:ml-12 uppercase font-cSoon leading-10">
-      <span class="text-primary text-4xl lg:text-6xl lg:mb-8 font-bol">
+      <span class="text-primary text-4xl lg:text-6xl lg:mb-8 font-bold">
         {sugar}</span
       >
       <p
@@ -44,8 +59,11 @@ const { extendedLorem, sugar } = i18n.Common;
     </section>
   </Container>
 </main>
-<aside class="bg-primary hidden lg:flex flex-row justify-center p-4">
-  <span class="text-4xl text-deepRose font-bold text-center font-cSoon"
+<aside
+  class="bg-primary lg:flex flex-row justify-center p-2 text-center truncate overflow-hidden lg:p-4"
+>
+  <span
+    class="text-sm lg:text-4xl text-deepRose font-bold text-center font-cSoon break-words"
     >Lorem ipsum dolor sit amet, consectetuer , Lorem ipsum dolor sit amet,</span
   >
 </aside>

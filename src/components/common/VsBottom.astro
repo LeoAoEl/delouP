@@ -1,39 +1,41 @@
 ---
+import Container from "@components/Container.astro";
 import Pasta from "@assets/icons/banner/Pasta.astro";
 import ClipB from "@assets/icons/banner/Clipboard.astro";
 import Vacuna from "@assets/icons/banner/Vacine.astro";
 import Gheal from "@assets/icons/banner/GHeal.astro";
 import Diente from "@assets/icons/banner/Diente.astro";
-import Container from "@components/Container.astro";
 ---
 
-<main class="lg:bg-waves py-24 bg-cover">
-  <Container className=" lg:py-8  justify-center items-center lg:mt-24">
+<main class="bg-waves pt-24 lg:bg-cover bg-no-repeat bottom-0">
+  <Container
+    className="lg:py-8  justify-center items-center lg:mt-24 bg-primary py-16"
+  >
     <div
-      class="flex-col gap-16 lg:gap-24 lg:flex-row flex items-center justify-center"
+      class="gap-8 lg:gap-24 items-center lg:flex grid grid-cols-2 lg:flex-row mx-auto"
     >
       <span
-        class="p-8 rounded-full border-deepRose border-4 transform hover:scale-105 transition-transform"
+        class="p-4 lg:p-8 rounded-full mx-auto border-deepRose border-4 transform lg:hover:scale-105 transition-transform"
       >
         <Gheal />
       </span>
       <span
-        class="p-8 rounded-full border-deepRose border-4 transform hover:scale-105 transition-transform"
+        class="p-4 lg:p-8 rounded-full mx-auto border-deepRose border-4 transform lg:hover:scale-105 transition-transform"
       >
         <Pasta />
       </span>
       <span
-        class="p-8 rounded-full border-deepRose border-4 transform hover:scale-105 transition-transform"
+        class="p-4 lg:p-8 rounded-full mx-auto border-deepRose border-4 transform lg:hover:scale-105 transition-transform"
       >
         <ClipB />
       </span>
       <span
-        class="p-8 rounded-full border-deepRose border-4 transform hover:scale-105 transition-transform"
+        class="p-4 lg:p-8 rounded-full mx-auto border-deepRose border-4 transform lg:hover:scale-105 transition-transform"
       >
         <Vacuna />
       </span>
       <span
-        class="p-8 rounded-full border-deepRose border-4 transform hover:scale-105 transition-transform"
+        class="p-4 lg:p-8 rounded-full mx-auto border-deepRose border-4 transform lg:hover:scale-105 transition-transform"
       >
         <Diente />
       </span>
