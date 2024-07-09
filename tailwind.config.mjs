@@ -20,6 +20,11 @@ export default {
         waves: " url('/src/assets/images/wave.webp')",
         bottomWave: " url('/src/assets/images/purpleWave.webp')",
       },
+      fontFamily: {
+        noto: ["Noto Sans Georgian", "sans-serif"],
+        comic: ["Comic Neue", "sans-serif"],
+        cSoon: ["Coming Soon", "sans-serif"],
+      },
     },
   },
   plugins: [],

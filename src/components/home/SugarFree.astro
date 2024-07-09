@@ -9,12 +9,14 @@ const i18n = getI18N({ currentLocale });
 const { extendedLorem, sugar } = i18n.Common;
 ---
 
-<aside class="bg-primary hidden lg:flex flex-row justify-between p-4">
-  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
-  <span class="text-5xl text-deepRose font-bold">{sugar}</span>
+<aside
+  class="bg-primary font-noto hidden uppercase lg:flex flex-row justify-between p-4"
+>
+  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
+  <span class="text-3xl text-deepRose font-bold">{sugar}</span>
 </aside>
 <main class="bg-deepRose py-16">
   <Container
@@ -30,12 +32,12 @@ const { extendedLorem, sugar } = i18n.Common;
         class={" drop-shadow-2xl"}
       />
     </picture>
-    <section class="lg:w-1/2 lg:ml-12">
-      <span class="text-primary text-5xl lg:text-7xl lg:mb-4 font-extrabold">
+    <section class="lg:w-1/2 lg:ml-12 uppercase font-cSoon leading-10">
+      <span class="text-primary text-4xl lg:text-6xl lg:mb-8 font-bol">
         {sugar}</span
       >
       <p
-        class="text-slate-200 text text-2xl lg:text-5xl text-justify mt-4 lg:mt-4 mb-8 lg:mb-0"
+        class="text-slate-100 lg:leading-10 text-2xl lg:text-4xl mt-4 lg:mt-4 mb-8 lg:mb-0"
       >
         {extendedLorem}
       </p>
@@ -43,7 +45,7 @@ const { extendedLorem, sugar } = i18n.Common;
   </Container>
 </main>
 <aside class="bg-primary hidden lg:flex flex-row justify-center p-4">
-  <span class="text-5xl text-deepRose font-bold text-center"
+  <span class="text-4xl text-deepRose font-bold text-center font-cSoon"
     >Lorem ipsum dolor sit amet, consectetuer , Lorem ipsum dolor sit amet,</span
   >
 </aside>

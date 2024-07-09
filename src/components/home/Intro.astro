@@ -13,35 +13,38 @@ const { title, p1, p2, p3, sugar } = i18n.Intro;
 >
   <div class="py-40 flex justify-center place-content-center">
     <h1
-      class="relative uppercase text-3xl lg:text-7xl font-extrabold text-orange-600 bg-white py-4 px-8 rounded-full"
+      class="relative uppercase text-3xl lg:text-8xl font-extrabold text-naranja bg-white py-4 px-8 rounded-full"
     >
       {title}
     </h1>
   </div>
 
-  <div class="bg-lightRose min-w-full">
+  <div class="bg-lightRose min-w-full pt-8">
     <section class="flex flex-col justify-center p-8 gap-4">
-      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+      <span
+        class="text-3xl lg:text-7xl font-thin text-center text-slate-100 font-comic"
         >{p1}
         <span
-          class="text-primary uppercase hover:text-deepPurple transition-all cursor-pointer ease-in"
+          class="text-primary uppercase hover:text-deepPurple transition-all cursor-pointer ease-in font-comic"
           >{p2}</span
         >
       </span>
-      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+      <span
+        class="text-3xl font-comic lg:text-7xl font-thin text-center text-slate-100"
         >LOREM IPSUM</span
       >
-      <span class="text-3xl lg:text-7xl font-thin text-center text-slate-100"
+      <span
+        class="text-3xl lg:text-7xl font-comic font-thin text-center text-slate-100"
         >{p3}</span
       >
       <span
-        class="border-2 mx-auto transition-all cursor-pointer mb-8 ease-in-out hover:text-primary hover:bg-deepPurple hover:border-primary text-3xl mt-8 rounded-full border-deepPurple p-2 bg-primary text-deepPurple uppercase"
+        class="border-2 font-comic mx-auto transition-all cursor-pointer mb-8 ease-in-out hover:text-primary hover:bg-deepPurple hover:border-primary text-3xl mt-8 rounded-full border-deepPurple p-2 bg-primary text-deepPurple uppercase"
         >lorem ipsum</span
       >
     </section>
   </div>
 
-  <div class="flex lg:flex-row flex-col lg:h-48">
+  <div class="flex lg:flex-row flex-col lg:h-80">
     <picture class="lg:w-1/2">
       <Image
         src={BottomImg}
@@ -51,7 +54,7 @@ const { title, p1, p2, p3, sugar } = i18n.Intro;
       />
     </picture>
     <div
-      class="flex flex-col bg-primary lg:w-1/2 w-full justify-center items-center p-4 gap-4"
+      class="flex flex-col font-comic bg-primary lg:w-1/2 w-full justify-center items-center p-4 gap-4"
     >
       <span class="text-3xl lg:text-7xl font-normal text-orange-600 text-center"
         >0 g</span
